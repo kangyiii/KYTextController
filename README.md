@@ -1,6 +1,8 @@
 # KYTextController
 ### 通过标题数组和输入的数据类型来自动创建tableView,目前支持文字输入和自定义picker,最终输入的数据会存储在self.dataArr中
 
+![说明](https://github.com/kangyiii/KYTextController/blob/master/%E8%AF%B4%E6%98%8E.gif)
+
 #### 使用说明
 1. 继承KYTextBaseController
 2. 添加标题数组和类型数组
