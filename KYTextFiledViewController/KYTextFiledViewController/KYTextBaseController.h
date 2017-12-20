@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  KYTextBaseController.h
 //  KYTextFiledViewController
 //
 //  Created by 康义 on 2017/12/20.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface KYTextBaseController : UIViewController
 
+@property (nonatomic,strong)UITableView * tableView;
 
 @end
-
