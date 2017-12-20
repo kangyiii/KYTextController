@@ -40,15 +40,19 @@
     UIBarButtonItem * btnSpace = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 5, 30, 30);
+    btn.frame = CGRectMake(0, 5, 50, 30);
     [btn addTarget:self action:@selector(pickerCancel:) forControlEvents:UIControlEventTouchUpInside];
-    [btn setImage:[UIImage imageNamed:@"error"] forState:UIControlStateNormal];
+    [btn setTitle:@"取消" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14.f];
     UIBarButtonItem *cancelBtn = [[UIBarButtonItem alloc]initWithCustomView:btn];
     
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn2.frame = CGRectMake(0, 5, 30, 30);
+    btn2.frame = CGRectMake(0, 5, 50, 30);
     [btn2 addTarget:self action:@selector(pickerDone:) forControlEvents:UIControlEventTouchUpInside];
-    [btn2 setImage:[UIImage imageNamed:@"right"] forState:UIControlStateNormal];
+    [btn2 setTitle:@"确定" forState:UIControlStateNormal];
+    [btn2 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    btn2.titleLabel.font = [UIFont systemFontOfSize:14.f];
     UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc]initWithCustomView:btn2];
     
     self.titleButton = [[UIBarButtonItem alloc] initWithTitle:self.pickerTitle style:UIBarButtonItemStylePlain target:nil action:nil];

@@ -7,6 +7,8 @@
 //
 
 #import "KYTextFiledViewController.h"
+#import "KYTextField.h"
+#import "PickerView.h"
 
 @interface KYTextFiledViewController ()
 
@@ -16,22 +18,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //标题数组
+    self.titleArr = @[@[@"1.1",@"1.2",@"1.3",@"1.4"],@[@"2.3",@"2.4"],@[@"3.1"]];
+    //状态数组 @""为输入 @"请选择"为选择
+    self.stateArr = @[@[@"",@"",@"",@"请选择"],@[@"",@"请选择"],@[@""]];
+    self.tableView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+    [self.view addSubview:self.tableView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.view endEditing:YES];
+    //为选择的cell这里自定义选择内容
+    if(indexPath.section == 0 && indexPath.row == 3){
+        [PickerView showPickerWithOptions:@[@"1",@"2",@"3"] selectionBlock:^(NSString *selectedOption) {
+            self.dataArr[indexPath.section][indexPath.row] = selectedOption;
+            [self.tableView reloadData];
+        }];
+    }else if(indexPath.section == 1 && indexPath.row == 1){
+        [PickerView showPickerWithOptions:@[@"33",@"22",@"11"] selectionBlock:^(NSString *selectedOption) {
+            self.dataArr[indexPath.section][indexPath.row] = selectedOption;
+            [self.tableView reloadData];
+        }];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)textFieldDidEndEditing:(UITextField *)textField{
+    if([textField isKindOfClass:[KYTextField class]]){
+        KYTextField * tf = (KYTextField *)textField;
+        self.dataArr[tf.section][tf.row] = tf.text;
+    }
 }
-*/
-
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
 @end

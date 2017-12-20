@@ -7,25 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC4ED4281FEA51BF00985530 /* KYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4ED4271FEA51BF00985530 /* KYTextField.m */; };
 		ACD1BE841FE9FCD7002F40D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1BE831FE9FCD7002F40D9 /* main.m */; };
 		ACD1BE871FE9FCD7002F40D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1BE861FE9FCD7002F40D9 /* AppDelegate.m */; };
-		ACD1BE8A1FE9FCD7002F40D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1BE891FE9FCD7002F40D9 /* ViewController.m */; };
 		ACD1BE8D1FE9FCD7002F40D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD1BE8B1FE9FCD7002F40D9 /* Main.storyboard */; };
 		ACD1BE8F1FE9FCD7002F40D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD1BE8E1FE9FCD7002F40D9 /* Assets.xcassets */; };
 		ACD1BE921FE9FCD7002F40D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD1BE901FE9FCD7002F40D9 /* LaunchScreen.storyboard */; };
+		ACD1BE9B1FE9FD99002F40D9 /* KYTextFiledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1BE9A1FE9FD99002F40D9 /* KYTextFiledViewController.m */; };
+		ACE369B61FEA055900D478E8 /* KYTextBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE369B51FEA055900D478E8 /* KYTextBaseController.m */; };
+		ACE369BA1FEA058700D478E8 /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE369B81FEA058700D478E8 /* TextCell.m */; };
+		ACE369BB1FEA058700D478E8 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE369B91FEA058700D478E8 /* TextCell.xib */; };
+		ACE369BF1FEA3AF300D478E8 /* PickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE369BE1FEA3AF300D478E8 /* PickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC4ED4261FEA51BF00985530 /* KYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTextField.h; sourceTree = "<group>"; };
+		AC4ED4271FEA51BF00985530 /* KYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTextField.m; sourceTree = "<group>"; };
 		ACD1BE7F1FE9FCD7002F40D9 /* KYTextFiledViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYTextFiledViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD1BE831FE9FCD7002F40D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACD1BE851FE9FCD7002F40D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ACD1BE861FE9FCD7002F40D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ACD1BE881FE9FCD7002F40D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ACD1BE891FE9FCD7002F40D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ACD1BE8C1FE9FCD7002F40D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACD1BE8E1FE9FCD7002F40D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD1BE911FE9FCD7002F40D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD1BE931FE9FCD7002F40D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD1BE991FE9FD99002F40D9 /* KYTextFiledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTextFiledViewController.h; sourceTree = "<group>"; };
+		ACD1BE9A1FE9FD99002F40D9 /* KYTextFiledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTextFiledViewController.m; sourceTree = "<group>"; };
+		ACE369B41FEA055900D478E8 /* KYTextBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYTextBaseController.h; sourceTree = "<group>"; };
+		ACE369B51FEA055900D478E8 /* KYTextBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYTextBaseController.m; sourceTree = "<group>"; };
+		ACE369B71FEA058700D478E8 /* TextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
+		ACE369B81FEA058700D478E8 /* TextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
+		ACE369B91FEA058700D478E8 /* TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		ACE369BD1FEA3AF300D478E8 /* PickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerView.h; sourceTree = "<group>"; };
+		ACE369BE1FEA3AF300D478E8 /* PickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +72,11 @@
 		ACD1BE811FE9FCD7002F40D9 /* KYTextFiledViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ACE369B31FEA053C00D478E8 /* KYTextFiledViewController */,
 				ACD1BE851FE9FCD7002F40D9 /* AppDelegate.h */,
 				ACD1BE861FE9FCD7002F40D9 /* AppDelegate.m */,
-				ACD1BE881FE9FCD7002F40D9 /* ViewController.h */,
-				ACD1BE891FE9FCD7002F40D9 /* ViewController.m */,
+				ACD1BE991FE9FD99002F40D9 /* KYTextFiledViewController.h */,
+				ACD1BE9A1FE9FD99002F40D9 /* KYTextFiledViewController.m */,
 				ACD1BE8B1FE9FCD7002F40D9 /* Main.storyboard */,
 				ACD1BE8E1FE9FCD7002F40D9 /* Assets.xcassets */,
 				ACD1BE901FE9FCD7002F40D9 /* LaunchScreen.storyboard */,
@@ -77,6 +92,30 @@
 				ACD1BE831FE9FCD7002F40D9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACE369B31FEA053C00D478E8 /* KYTextFiledViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACE369BC1FEA3AF300D478E8 /* KYAlertPicker */,
+				ACE369B41FEA055900D478E8 /* KYTextBaseController.h */,
+				ACE369B51FEA055900D478E8 /* KYTextBaseController.m */,
+				AC4ED4261FEA51BF00985530 /* KYTextField.h */,
+				AC4ED4271FEA51BF00985530 /* KYTextField.m */,
+				ACE369B71FEA058700D478E8 /* TextCell.h */,
+				ACE369B81FEA058700D478E8 /* TextCell.m */,
+				ACE369B91FEA058700D478E8 /* TextCell.xib */,
+			);
+			path = KYTextFiledViewController;
+			sourceTree = "<group>";
+		};
+		ACE369BC1FEA3AF300D478E8 /* KYAlertPicker */ = {
+			isa = PBXGroup;
+			children = (
+				ACE369BD1FEA3AF300D478E8 /* PickerView.h */,
+				ACE369BE1FEA3AF300D478E8 /* PickerView.m */,
+			);
+			path = KYAlertPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +179,7 @@
 			files = (
 				ACD1BE921FE9FCD7002F40D9 /* LaunchScreen.storyboard in Resources */,
 				ACD1BE8F1FE9FCD7002F40D9 /* Assets.xcassets in Resources */,
+				ACE369BB1FEA058700D478E8 /* TextCell.xib in Resources */,
 				ACD1BE8D1FE9FCD7002F40D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,9 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD1BE8A1FE9FCD7002F40D9 /* ViewController.m in Sources */,
 				ACD1BE871FE9FCD7002F40D9 /* AppDelegate.m in Sources */,
+				ACE369BA1FEA058700D478E8 /* TextCell.m in Sources */,
+				ACE369B61FEA055900D478E8 /* KYTextBaseController.m in Sources */,
 				ACD1BE841FE9FCD7002F40D9 /* main.m in Sources */,
+				ACE369BF1FEA3AF300D478E8 /* PickerView.m in Sources */,
+				ACD1BE9B1FE9FD99002F40D9 /* KYTextFiledViewController.m in Sources */,
+				AC4ED4281FEA51BF00985530 /* KYTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +354,7 @@
 				ACD1BE981FE9FCD7002F40D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

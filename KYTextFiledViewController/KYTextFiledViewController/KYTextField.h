@@ -10,4 +10,8 @@
 
 @interface KYTextField : UITextField
 
+@property (nonatomic,assign)NSInteger section;
+
+@property (nonatomic,assign)NSInteger row;
+
 @end

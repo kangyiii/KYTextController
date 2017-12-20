@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -11,9 +15,41 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwJ-q5-cLJ">
+                        <rect key="frame" x="8" y="0.0" width="104" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="104" id="7IR-52-Cec"/>
+                            <constraint firstAttribute="height" constant="44" id="fqJ-nM-uil"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ycA-of-SyN" customClass="KYTextField">
+                        <rect key="frame" x="135" y="0.0" width="177" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Tuf-O9-KbC"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ycA-of-SyN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0dr-aY-aUM"/>
+                    <constraint firstItem="AwJ-q5-cLJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BVn-I4-jGh"/>
+                    <constraint firstItem="AwJ-q5-cLJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GDd-G5-sWs"/>
+                    <constraint firstItem="ycA-of-SyN" firstAttribute="leading" secondItem="AwJ-q5-cLJ" secondAttribute="trailing" constant="23" id="JZA-Y8-o3Z"/>
+                    <constraint firstAttribute="trailing" secondItem="ycA-of-SyN" secondAttribute="trailing" constant="8" id="cb2-ip-myK"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="textFied" destination="ycA-of-SyN" id="YAA-SG-idV"/>
+                <outlet property="titleLable" destination="AwJ-q5-cLJ" id="QEx-nf-eav"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

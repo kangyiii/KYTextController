@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KYTextBaseController : UIViewController
+
+@interface KYTextBaseController : UIViewController<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
 
 @property (nonatomic,strong)UITableView * tableView;
+
+/**标题数组*/
+@property (nonatomic,strong)NSArray * titleArr;
+/**数据源*/
+@property (nonatomic,strong)NSMutableArray * dataArr;
+/**状态数组 输入=@"" 选择=@"请选择"*/
+@property (nonatomic,copy)NSArray * stateArr;
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KYTextBaseController.h"
 
-@interface KYTextFiledViewController : UIViewController
+@interface KYTextFiledViewController : KYTextBaseController
 
 @end
